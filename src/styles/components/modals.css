@@ -1,0 +1,90 @@
+/**
+ * Modals
+ * Overlay dialogs for tutorials, offline, milestones, etc.
+ */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: var(--space-5);
+}
+
+/* Tutorial Card */
+.tutorial-card {
+    background: var(--bg-card);
+    border: 1px solid var(--accent-cyan);
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 242, 255, 0.2);
+    animation: modalIn 0.5s ease-out;
+}
+
+.tutorial-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: var(--space-5) 0;
+    color: var(--text-primary);
+}
+
+.tutorial-instruction {
+    font-size: 0.9rem;
+    color: var(--accent-purple);
+    margin-bottom: var(--space-6);
+}
+
+/* Objective Tracker */
+.objective-tracker {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-glow);
+    padding: var(--space-2) var(--space-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.objective-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.obj-label {
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: var(--text-secondary);
+    letter-spacing: 1px;
+}
+
+.obj-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent-cyan);
+}
+
+.objective-progress-bg {
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.objective-progress-fill {
+    height: 100%;
+    background: var(--accent-cyan);
+    box-shadow: 0 0 5px var(--accent-cyan);
+    transition: width 0.5s ease;
+    width: 0%;
+}

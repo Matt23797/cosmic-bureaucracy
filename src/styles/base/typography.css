@@ -1,0 +1,26 @@
+/**
+ * Typography
+ * Font families and heading styles
+ */
+
+h1,
+h2,
+.outfit {
+    font-family: 'Outfit', sans-serif;
+}
+
+.screen-title {
+    color: var(--accent-cyan);
+    margin-bottom: var(--space-1);
+}
+
+.screen-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.description {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}

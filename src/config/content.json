@@ -1,0 +1,1065 @@
+{
+  "resources": {
+    "forms": {
+      "id": "forms",
+      "name": "Forms",
+      "symbol": "",
+      "description": "Raw cosmic paperwork."
+    },
+    "compliance": {
+      "id": "compliance",
+      "name": "Compliance",
+      "symbol": "",
+      "description": "Obedience of local reality."
+    },
+    "time": {
+      "id": "time",
+      "name": "Stored Time",
+      "symbol": "",
+      "description": "Temporal residue from deferred filings."
+    },
+    "paradox": {
+      "id": "paradox",
+      "name": "Paradox",
+      "symbol": "",
+      "description": "Glitches caused by regulatory exploitation."
+    }
+  },
+  "departments": [
+    {
+      "id": "local-reality-office",
+      "name": "Local Reality Office",
+      "category": "standard",
+      "tags": [
+        "logistics"
+      ],
+      "baseCost": 15,
+      "costScaling": 1.15,
+      "output": {
+        "forms": 0.1
+      },
+      "description": "Processing local reality permits.",
+      "thresholdUpgrades": [
+        {
+          "threshold": 5,
+          "id": "lro_5",
+          "name": "Permit Stacking",
+          "cost": 393,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Overlapping permits merge for greater efficiency. +50% LRO output."
+        },
+        {
+          "threshold": 10,
+          "id": "lro_10",
+          "name": "Reality Overlap",
+          "cost": 1055,
+          "effect": {
+            "type": "boost_other",
+            "target": "temporal-filing",
+            "value": 0.01
+          },
+          "description": "Adjacent realities share paperwork. +1% Temporal Filing per LRO owned."
+        },
+        {
+          "threshold": 15,
+          "id": "lro_15",
+          "name": "Jurisdictional Creep",
+          "cost": 3184,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Gradually expand jurisdiction into neighboring dimensions. +50% LRO output."
+        },
+        {
+          "threshold": 25,
+          "id": "lro_25",
+          "name": "Reality Anchors",
+          "cost": 21468,
+          "effect": {
+            "type": "click_bonus",
+            "value": 0.005
+          },
+          "description": "Tether clicks to local reality. +0.5% click power per LRO owned."
+        },
+        {
+          "threshold": 50,
+          "id": "lro_50",
+          "name": "Multiverse Permits",
+          "cost": 1413466,
+          "effect": {
+            "type": "self_mult",
+            "value": 2
+          },
+          "description": "Issue permits across parallel universes. x2 LRO output."
+        },
+        {
+          "threshold": 100,
+          "id": "lro_100",
+          "name": "Universal Jurisdiction",
+          "cost": 3063426393,
+          "effect": {
+            "type": "global_mult",
+            "value": 1.05
+          },
+          "description": "Your authority now spans the entire cosmos. +5% all production."
+        }
+      ]
+    },
+    {
+      "id": "temporal-filing",
+      "name": "Temporal Filing",
+      "category": "standard",
+      "tags": [
+        "logistics",
+        "analysis"
+      ],
+      "baseCost": 150,
+      "costScaling": 1.15,
+      "output": {
+        "forms": 1
+      },
+      "description": "Optimizing the flow of paperwork through time.",
+      "thresholdUpgrades": [
+        {
+          "threshold": 5,
+          "id": "tf_5",
+          "name": "Batch Processing",
+          "cost": 3935,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Process multiple timelines simultaneously. +50% TF output."
+        },
+        {
+          "threshold": 10,
+          "id": "tf_10",
+          "name": "Time Leakage",
+          "cost": 10553,
+          "effect": {
+            "type": "time_bonus",
+            "value": 0.01
+          },
+          "description": "Temporal forms leak residual time. +0.01 Stored Time/s per TF owned."
+        },
+        {
+          "threshold": 15,
+          "id": "tf_15",
+          "name": "Chronological Order",
+          "cost": 31840,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Files self-organize across timelines. +50% TF output."
+        },
+        {
+          "threshold": 25,
+          "id": "tf_25",
+          "name": "Temporal Authority",
+          "cost": 214688,
+          "effect": {
+            "type": "click_bonus",
+            "value": 0.01
+          },
+          "description": "Your clicks ripple through time. +1% click power per TF owned."
+        },
+        {
+          "threshold": 50,
+          "id": "tf_50",
+          "name": "Time Dilation",
+          "cost": 14134662,
+          "effect": {
+            "type": "self_mult",
+            "value": 2
+          },
+          "description": "Stretch each second into an eternity. x2 TF output."
+        },
+        {
+          "threshold": 100,
+          "id": "tf_100",
+          "name": "Eternal Bureaucracy",
+          "cost": 30634263931,
+          "effect": {
+            "type": "global_mult",
+            "value": 1.05
+          },
+          "description": "Bureaucracy that outlasts heat death. +5% all production."
+        }
+      ]
+    },
+    {
+      "id": "interdimensional-compliance",
+      "name": "Interdimensional Compliance",
+      "category": "standard",
+      "tags": [
+        "enforcement"
+      ],
+      "baseCost": 2000,
+      "costScaling": 1.15,
+      "output": {
+        "forms": 15
+      },
+      "description": "Ensuring multiversal safety standards.",
+      "thresholdUpgrades": [
+        {
+          "threshold": 5,
+          "id": "ic_5",
+          "name": "Safety Protocols",
+          "cost": 52470,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Enforce safety across all dimensions. +50% IC output."
+        },
+        {
+          "threshold": 10,
+          "id": "ic_10",
+          "name": "Paradox Dampening",
+          "cost": 140715,
+          "effect": {
+            "type": "paradox_reduction",
+            "value": 0.02
+          },
+          "description": "Stability fields reduce reality glitches. -2% paradox gain per IC owned."
+        },
+        {
+          "threshold": 15,
+          "id": "ic_15",
+          "name": "Enforcement Division",
+          "cost": 424542,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Deploy compliance officers to every realm. +50% IC output."
+        },
+        {
+          "threshold": 25,
+          "id": "ic_25",
+          "name": "Regulatory Authority",
+          "cost": 2862517,
+          "effect": {
+            "type": "boost_other",
+            "target": "local-reality-office",
+            "value": 0.02
+          },
+          "description": "Regulate reality at the source. +2% LRO per IC owned."
+        },
+        {
+          "threshold": 50,
+          "id": "ic_50",
+          "name": "Universal Standards",
+          "cost": 188462163,
+          "effect": {
+            "type": "self_mult",
+            "value": 2
+          },
+          "description": "One set of rules for all existence. x2 IC output."
+        },
+        {
+          "threshold": 100,
+          "id": "ic_100",
+          "name": "Cosmic Compliance",
+          "cost": 408456852417,
+          "effect": {
+            "type": "global_mult",
+            "value": 1.05
+          },
+          "description": "Complete cosmic order achieved. +5% all production."
+        }
+      ]
+    },
+    {
+      "id": "chrono-archive",
+      "name": "Chrono-Archive",
+      "category": "standard",
+      "tags": [
+        "analysis"
+      ],
+      "baseCost": 25000,
+      "costScaling": 1.15,
+      "output": {
+        "forms": 200,
+        "time": 0.5
+      },
+      "description": "Storing temporal residue from processed forms.",
+      "thresholdUpgrades": [
+        {
+          "threshold": 5,
+          "id": "ca_5",
+          "name": "Deep Storage",
+          "cost": 655877,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Archive chambers extend into yesterday. +50% CA output."
+        },
+        {
+          "threshold": 10,
+          "id": "ca_10",
+          "name": "Temporal Siphon",
+          "cost": 1758938,
+          "effect": {
+            "type": "time_bonus",
+            "value": 0.05
+          },
+          "description": "Extract extra time from archived moments. +0.05 Stored Time/s per CA."
+        },
+        {
+          "threshold": 15,
+          "id": "ca_15",
+          "name": "Index Everything",
+          "cost": 5306779,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Cross-reference every temporal event. +50% CA output."
+        },
+        {
+          "threshold": 25,
+          "id": "ca_25",
+          "name": "Archive Synergy",
+          "cost": 35781470,
+          "effect": {
+            "type": "boost_other",
+            "target": "temporal-filing",
+            "value": 0.03
+          },
+          "description": "Archived records accelerate filing. +3% TF per CA owned."
+        },
+        {
+          "threshold": 50,
+          "id": "ca_50",
+          "name": "Recursive Storage",
+          "cost": 2355777046,
+          "effect": {
+            "type": "self_mult",
+            "value": 2
+          },
+          "description": "Store the archive inside itself. x2 CA output."
+        },
+        {
+          "threshold": 100,
+          "id": "ca_100",
+          "name": "Eternal Records",
+          "cost": 5105710655218,
+          "effect": {
+            "type": "global_mult",
+            "value": 1.05
+          },
+          "description": "Nothing is ever forgotten. +5% all production."
+        }
+      ]
+    },
+    {
+      "id": "flux-stabilizer",
+      "name": "Flux Stabilizer",
+      "category": "standard",
+      "tags": [
+        "enforcement",
+        "logistics"
+      ],
+      "baseCost": 350000,
+      "costScaling": 1.15,
+      "output": {
+        "forms": 3000,
+        "time": 2.5
+      },
+      "description": "Solidifies the flow of bureaucratic time.",
+      "thresholdUpgrades": [
+        {
+          "threshold": 5,
+          "id": "fs_5",
+          "name": "Temporal Locks",
+          "cost": 9182282,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Lock fluctuations in place. +50% FS output."
+        },
+        {
+          "threshold": 10,
+          "id": "fs_10",
+          "name": "Anti-Paradox Field",
+          "cost": 24625134,
+          "effect": {
+            "type": "paradox_reduction",
+            "value": 0.03
+          },
+          "description": "Stabilize reality anomalies. -3% paradox gain per FS."
+        },
+        {
+          "threshold": 15,
+          "id": "fs_15",
+          "name": "Flux Capacitors",
+          "cost": 74294910,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Convert temporal noise to power. +50% FS output."
+        },
+        {
+          "threshold": 25,
+          "id": "fs_25",
+          "name": "Archive Pipeline",
+          "cost": 500940583,
+          "effect": {
+            "type": "boost_other",
+            "target": "chrono-archive",
+            "value": 0.02
+          },
+          "description": "Stable flux feeds archives. +2% CA per FS owned."
+        },
+        {
+          "threshold": 50,
+          "id": "fs_50",
+          "name": "Quantum Lock",
+          "cost": 32980878656,
+          "effect": {
+            "type": "self_mult",
+            "value": 2
+          },
+          "description": "Freeze causality itself. x2 FS output."
+        },
+        {
+          "threshold": 100,
+          "id": "fs_100",
+          "name": "Perfect Stability",
+          "cost": 71479949173060,
+          "effect": {
+            "type": "global_mult",
+            "value": 1.05
+          },
+          "description": "Time flows exactly as planned. +5% all production."
+        }
+      ]
+    },
+    {
+      "id": "temporal-sub-basement",
+      "name": "Temporal Sub-Basement",
+      "category": "standard",
+      "tags": [
+        "logistics"
+      ],
+      "baseCost": 5000000,
+      "costScaling": 1.15,
+      "output": {
+        "forms": 50000,
+        "time": 10
+      },
+      "description": "Extends the physical office into the recursive past.",
+      "thresholdUpgrades": [
+        {
+          "threshold": 5,
+          "id": "tsb_5",
+          "name": "Deeper Digging",
+          "cost": 131175468,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Excavate further into yesterday. +50% TSB output."
+        },
+        {
+          "threshold": 10,
+          "id": "tsb_10",
+          "name": "Past-Mining",
+          "cost": 351787629,
+          "effect": {
+            "type": "time_bonus",
+            "value": 0.1
+          },
+          "description": "Extract time from obsolete futures. +0.1 Stored Time/s per TSB."
+        },
+        {
+          "threshold": 15,
+          "id": "tsb_15",
+          "name": "Causal Reinforcement",
+          "cost": 1061355864,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Prevent timeline collapse. +50% TSB output."
+        },
+        {
+          "threshold": 25,
+          "id": "tsb_25",
+          "name": "Recursive Architecture",
+          "cost": 7156294047,
+          "effect": {
+            "type": "boost_other",
+            "target": "flux-stabilizer",
+            "value": 0.02
+          },
+          "description": "Nested basements stabilize flux. +2% FS per TSB owned."
+        },
+        {
+          "threshold": 50,
+          "id": "tsb_50",
+          "name": "Infinite Regression",
+          "cost": 471155409384,
+          "effect": {
+            "type": "self_mult",
+            "value": 2
+          },
+          "description": "Basements within basements. x2 TSB output."
+        },
+        {
+          "threshold": 100,
+          "id": "tsb_100",
+          "name": "Temporal Foundation",
+          "cost": 1021142131043721,
+          "effect": {
+            "type": "global_mult",
+            "value": 1.05
+          },
+          "description": "Build on the bedrock of time itself. +5% all production."
+        }
+      ]
+    },
+    {
+      "id": "bureaucratic-ai",
+      "name": "Bureaucratic AI",
+      "category": "standard",
+      "tags": [
+        "analysis",
+        "enforcement"
+      ],
+      "baseCost": 100000000,
+      "costScaling": 1.15,
+      "output": {
+        "forms": 1200000
+      },
+      "description": "A neural net trained exclusively on tax law and zoning permits.",
+      "thresholdUpgrades": [
+        {
+          "threshold": 5,
+          "id": "bai_5",
+          "name": "Parallel Processing",
+          "cost": 2623509374,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Run simulations in parallel. +50% BAI output."
+        },
+        {
+          "threshold": 10,
+          "id": "bai_10",
+          "name": "Algorithmic Efficiency",
+          "cost": 7035752583,
+          "effect": {
+            "type": "global_mult",
+            "value": 1.02
+          },
+          "description": "Optimize all workflows. +2% all production."
+        },
+        {
+          "threshold": 15,
+          "id": "bai_15",
+          "name": "Legislative Database",
+          "cost": 21227117293,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Access every law ever written. +50% BAI output."
+        },
+        {
+          "threshold": 25,
+          "id": "bai_25",
+          "name": "Predictive Enforcement",
+          "cost": 143125880955,
+          "effect": {
+            "type": "paradox_reduction",
+            "value": 0.05
+          },
+          "description": "Solve crimes before they happen. -5% paradox gain per BAI."
+        },
+        {
+          "threshold": 50,
+          "id": "bai_50",
+          "name": "Singularity Management",
+          "cost": 9423108187686,
+          "effect": {
+            "type": "self_mult",
+            "value": 2
+          },
+          "description": "The AI manages itself. x2 BAI output."
+        },
+        {
+          "threshold": 100,
+          "id": "bai_100",
+          "name": "Omniscient Bureaucrat",
+          "cost": 20422842620874428,
+          "effect": {
+            "type": "global_mult",
+            "value": 1.05
+          },
+          "description": "The perfect system. +5% all production."
+        }
+      ]
+    },
+    {
+      "id": "forbidden-automation",
+      "name": "Forbidden Automation",
+      "category": "forbidden",
+      "tags": [
+        "logistics"
+      ],
+      "baseCost": 500000,
+      "costScaling": 1.25,
+      "output": {
+        "forms": 5000,
+        "paradox": 0.5
+      },
+      "description": "A highly illegal, high-output processing core. Generates Paradox.",
+      "thresholdUpgrades": [
+        {
+          "threshold": 5,
+          "id": "fa_5",
+          "name": "Overclocking",
+          "cost": 18310546,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Ignore safety limits. +50% FA output."
+        },
+        {
+          "threshold": 10,
+          "id": "fa_10",
+          "name": "Heat Sink",
+          "cost": 74505805,
+          "effect": {
+            "type": "paradox_reduction",
+            "value": 0.05
+          },
+          "description": "Vent stability errors. -5% paradox gain per FA."
+        },
+        {
+          "threshold": 15,
+          "id": "fa_15",
+          "name": "Recursive Loops",
+          "cost": 341060513,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Process forms before they arrive. +50% FA output."
+        },
+        {
+          "threshold": 25,
+          "id": "fa_25",
+          "name": "Illegal Supply Chain",
+          "cost": 5293955920,
+          "effect": {
+            "type": "boost_other",
+            "target": "temporal-sub-basement",
+            "value": 0.03
+          },
+          "description": "Hide machinery in the past. +3% TSB per FA owned."
+        },
+        {
+          "threshold": 50,
+          "id": "fa_50",
+          "name": "Sentient Factory",
+          "cost": 2802596928649,
+          "effect": {
+            "type": "self_mult",
+            "value": 2
+          },
+          "description": "The factory demands more work. x2 FA output."
+        },
+        {
+          "threshold": 100,
+          "id": "fa_100",
+          "name": "Total Automation",
+          "cost": 392727477223818100,
+          "effect": {
+            "type": "global_mult",
+            "value": 1.10
+          },
+          "description": "The machines run everything. +10% all production."
+        }
+      ]
+    },
+    {
+      "id": "data-launderer",
+      "name": "Data-Launderer",
+      "category": "forbidden",
+      "tags": [
+        "analysis"
+      ],
+      "baseCost": 5000000,
+      "costScaling": 1.3,
+      "output": {
+        "forms": 60000,
+        "paradox": 1.5
+      },
+      "description": "Obfuscates processing logs to mask illegal output. High risk.",
+      "thresholdUpgrades": [
+        {
+          "threshold": 5,
+          "id": "dl_5",
+          "name": "Cooked Books",
+          "cost": 214207500,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Falsify the records. +50% DL output."
+        },
+        {
+          "threshold": 10,
+          "id": "dl_10",
+          "name": "Bribed Audits",
+          "cost": 1060449937,
+          "effect": {
+            "type": "paradox_reduction",
+            "value": 0.1
+          },
+          "description": "Pay off the inspectors. -10% paradox gain per DL."
+        },
+        {
+          "threshold": 15,
+          "id": "dl_15",
+          "name": "Shadow Servers",
+          "cost": 5906064578,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Process data off the grid. +50% DL output."
+        },
+        {
+          "threshold": 25,
+          "id": "dl_25",
+          "name": "Deep Web Link",
+          "cost": 135700192593,
+          "effect": {
+            "type": "boost_other",
+            "target": "bureaucratic-ai",
+            "value": 0.02
+          },
+          "description": "Feed the AI illegal data. +2% BAI per DL owned."
+        },
+        {
+          "threshold": 50,
+          "id": "dl_50",
+          "name": "Reality Scrubbing",
+          "cost": 191511239607356,
+          "effect": {
+            "type": "self_mult",
+            "value": 2
+          },
+          "description": "Delete the evidence from existence. x2 DL output."
+        },
+        {
+          "threshold": 100,
+          "id": "dl_100",
+          "name": "Perfect Crime",
+          "cost": 190718085458921600000,
+          "effect": {
+            "type": "global_mult",
+            "value": 1.10
+          },
+          "description": "No one suspects a thing. +10% all production."
+        }
+      ]
+    },
+    {
+      "id": "reality-folding-engine",
+      "name": "Reality Folding Engine",
+      "category": "forbidden",
+      "tags": [
+        "enforcement"
+      ],
+      "baseCost": 100000000,
+      "costScaling": 1.4,
+      "output": {
+        "forms": 1500000,
+        "paradox": 7
+      },
+      "description": "Directly prints forms from alternate timelines. Massive stability risk.",
+      "thresholdUpgrades": [
+        {
+          "threshold": 5,
+          "id": "rfe_5",
+          "name": "Space Compression",
+          "cost": 5762399999,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Squeeze more forms into this reality. +50% RFE output."
+        },
+        {
+          "threshold": 10,
+          "id": "rfe_10",
+          "name": "Timeline Anchors",
+          "cost": 41322093567,
+          "effect": {
+            "type": "paradox_reduction",
+            "value": 0.15
+          },
+          "description": "Bolt the dimensions together. -15% paradox gain per RFE."
+        },
+        {
+          "threshold": 15,
+          "id": "rfe_15",
+          "name": "Dimensional Pierce",
+          "cost": 333360204766,
+          "effect": {
+            "type": "self_mult",
+            "value": 1.5
+          },
+          "description": "Punch holes in reality for faster access. +50% RFE output."
+        },
+        {
+          "threshold": 25,
+          "id": "rfe_25",
+          "name": "Forbidden Knowledge",
+          "cost": 16070998502088,
+          "effect": {
+            "type": "click_bonus",
+            "value": 0.05
+          },
+          "description": "Channel the void through your cursor. +5% click power per RFE."
+        },
+        {
+          "threshold": 50,
+          "id": "rfe_50",
+          "name": "Universe Collapse",
+          "cost": 144635115998316480,
+          "effect": {
+            "type": "self_mult",
+            "value": 2
+          },
+          "description": "Harvest energy from dying stars. x2 RFE output."
+        },
+        {
+          "threshold": 100,
+          "id": "rfe_100",
+          "name": "Multiverse Dominance",
+          "cost": 5.85740869835701e+24,
+          "effect": {
+            "type": "global_mult",
+            "value": 1.15
+          },
+          "description": "Ruler of all realities. +15% all production."
+        }
+      ]
+    }
+  ],
+  "philosophies": [
+    {
+      "id": "compliance",
+      "name": "Compliance Doctrine",
+      "icon": "/assets/icons/factions/temporal.svg",
+      "description": "Stability through absolute adherence to regulations.",
+      "gimmick": "Zero-Tolerance Bonus",
+      "perks": [
+        "Increases efficiency by 200% if Paradox is 0",
+        "Reduces Paradox generation by 50%"
+      ],
+      "upgrades": [
+        {
+          "id": "comp_1",
+          "name": "Absolute Audit",
+          "cost": 5000000,
+          "formula": "forms",
+          "description": "Output multiplier x1.5 if Paradox is 0."
+        },
+        {
+          "id": "comp_2",
+          "name": "Paradox Anchor",
+          "cost": 100000000,
+          "formula": "forms",
+          "description": "Paradox friction is reduced by 50%."
+        }
+      ]
+    },
+    {
+      "id": "expansion",
+      "name": "Expansion Mandate",
+      "icon": "/assets/icons/factions/expansionism.svg",
+      "description": "Maximize pure volume at any cost.",
+      "gimmick": "Economies of Scale",
+      "perks": [
+        "Each department type boosts output by 10%",
+        "Manual clicks generate more forms based on total departments"
+      ],
+      "upgrades": [
+        {
+          "id": "exp_1",
+          "name": "Mass Approval",
+          "cost": 5000000,
+          "formula": "forms",
+          "description": "Synergy bonus per department increased to 15%."
+        },
+        {
+          "id": "exp_2",
+          "name": "Viral Bureaucracy",
+          "cost": 100000000,
+          "formula": "forms",
+          "description": "Department costs scale 10% slower."
+        }
+      ]
+    },
+    {
+      "id": "optimization",
+      "name": "Optimization Protocol",
+      "icon": "/assets/icons/factions/optimization.svg",
+      "description": "Precision management of internal synergies.",
+      "gimmick": "Cross-Dept Synergy",
+      "perks": [
+        "Departments with matching tags boost each other by 15%",
+        "Stored Time provides massive temporary production bursts"
+      ],
+      "upgrades": [
+        {
+          "id": "opt_1",
+          "name": "Tag Resonance",
+          "cost": 5000000,
+          "formula": "forms",
+          "description": "Matching tag bonus increased to 25%."
+        },
+        {
+          "id": "opt_2",
+          "name": "Chrono-Filing",
+          "cost": 100000000,
+          "formula": "forms",
+          "description": "Stored time is 50% more effective."
+        }
+      ]
+    },
+    {
+      "id": "emergency",
+      "name": "Emergency Powers",
+      "icon": "/assets/icons/factions/exploitation.svg",
+      "description": "Crisis management through illegal shortcuts.",
+      "gimmick": "Policy Debt",
+      "perks": [
+        "Massive production multipliers",
+        "Generates Policy Debt instead of slowing down"
+      ],
+      "upgrades": [
+        {
+          "id": "emer_1",
+          "name": "Laundered Forms",
+          "cost": 10000000,
+          "formula": "forms",
+          "description": "Forms gain x3, but Debt gain x2."
+        },
+        {
+          "id": "emer_2",
+          "name": "Reality Grafting",
+          "cost": 250000000,
+          "formula": "forms",
+          "description": "Debt friction is capped at 50%."
+        }
+      ]
+    }
+  ],
+  "metaUpgrades": [
+    {
+      "id": "meta_rank_1",
+      "name": "Junior Supervisor",
+      "path": "administrative",
+      "cost": 1,
+      "description": "Basic management training. Popping parasites grants +50% more Forms for 10s.",
+      "effect": "parasite_boost",
+      "value": 0.5
+    },
+    {
+      "id": "meta_rank_2",
+      "name": "District Director",
+      "path": "administrative",
+      "cost": 5,
+      "requires": [
+        "meta_rank_1"
+      ],
+      "description": "Advanced oversight. Unlocks 'Autonomous Auditing' (Auto-pop parasites).",
+      "effect": "unlock_feature",
+      "value": "auto_pop"
+    },
+    {
+      "id": "meta_rank_3",
+      "name": "Regional Governor",
+      "path": "administrative",
+      "cost": 20,
+      "requires": [
+        "meta_rank_2"
+      ],
+      "description": "High-level authority. Manual click power is doubled.",
+      "effect": "click_power",
+      "value": 2
+    },
+    {
+      "id": "meta_rank_4",
+      "name": "Reality Architect",
+      "path": "administrative",
+      "cost": 60,
+      "requires": [
+        "meta_rank_3"
+      ],
+      "description": "Ultimate control. Reduces administrative friction by 25%.",
+      "effect": "friction_reduction",
+      "value": 0.25
+    },
+    {
+      "id": "meta_cost_1",
+      "name": "Budgetary Oversight",
+      "path": "logistics",
+      "cost": 2,
+      "description": "Standard Department costs scale 5% slower.",
+      "effect": "scaling_reduction",
+      "value": 0.95
+    },
+    {
+      "id": "meta_debt_1",
+      "name": "Deferred Filing",
+      "path": "logistics",
+      "cost": 8,
+      "requires": [
+        "meta_cost_1"
+      ],
+      "description": "You can store up to 10% of Policy Debt without triggering friction.",
+      "effect": "debt_tolerance",
+      "value": 0.1
+    },
+    {
+      "id": "meta_eff_1",
+      "name": "High-Density Storage",
+      "path": "temporal",
+      "cost": 2,
+      "description": "+20% Stored Time capacity.",
+      "effect": "time_cap",
+      "value": 1.2
+    },
+    {
+      "id": "meta_warp_1",
+      "name": "Warp Resonance",
+      "path": "temporal",
+      "cost": 12,
+      "requires": [
+        "meta_eff_1"
+      ],
+      "description": "Time Warps are 50% more effective.",
+      "effect": "warp_boost",
+      "value": 1.5
+    }
+  ]
+}

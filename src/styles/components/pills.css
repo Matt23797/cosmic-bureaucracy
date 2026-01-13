@@ -1,0 +1,89 @@
+/**
+ * Resource Pills
+ * Header resource displays and rate indicators
+ */
+
+.resource-pill {
+    background: var(--bg-card);
+    padding: var(--space-1) var(--space-2);
+    border-radius: 20px;
+    border: 1px solid var(--border-glow);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    position: relative;
+    /* Stability: fixed dimensions prevent layout shifts */
+    min-width: 70px;
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.resource-pill.pop {
+    animation: pillPop 0.3s ease-out;
+}
+
+.rate-display {
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+    opacity: 0.8;
+    margin-left: 2px;
+}
+
+.resource-pill .symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 242, 255, 0.3) 0%, transparent 70%);
+    padding: 2px;
+}
+
+.icon-svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--text-primary);
+    filter: drop-shadow(0 0 5px var(--accent-cyan));
+}
+
+/* Debt Pill Variant */
+#debt-pill {
+    color: var(--accent-orange);
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.2);
+    border-color: rgba(249, 115, 22, 0.4);
+}
+
+#debt-pill .debt-icon {
+    filter: drop-shadow(0 0 5px rgba(249, 115, 22, 0.5)) brightness(1.2) sepia(1) hue-rotate(-10deg) saturate(2);
+}
+
+/* Paradox Pill Variant */
+#paradox-pill .icon-svg {
+    filter: drop-shadow(0 0 8px var(--accent-pink)) invert(48%) sepia(79%) saturate(2476%) hue-rotate(293deg) brightness(91%) contrast(101%);
+}
+
+#paradox-pill .value {
+    color: var(--accent-pink);
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .resource-pill {
+        padding: var(--space-1) var(--space-2);
+        gap: var(--space-1);
+        font-size: 0.7rem;
+        flex-grow: 1;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .resource-pill .symbol {
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+}

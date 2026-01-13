@@ -1,0 +1,37 @@
+/**
+ * CSS Variables / Design Tokens
+ * Central registry for colors, spacing, and dynamic properties
+ */
+
+:root {
+  /* Color Palette */
+  --bg-deep: #050614;
+  --bg-card: rgba(15, 17, 45, 0.75);
+  --bg-dark: #0f172a;
+  
+  --accent-cyan: #06b6d4;
+  --accent-purple: #c026d3;
+  --accent-pink: #db2777;
+  --accent-blue: #3b82f6;
+  --accent-orange: #f97316;
+  
+  --text-primary: #eef;
+  --text-secondary: #a0a0d0;
+  --border-glow: rgba(0, 242, 255, 0.3);
+
+  /* Layout */
+  --header-height: 60px;
+  --nav-height: 70px;
+
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+
+  /* Dynamic Paradox Props */
+  --paradox-intensity: 0;
+  --paradox-color: rgba(0, 242, 255, 0.15);
+}

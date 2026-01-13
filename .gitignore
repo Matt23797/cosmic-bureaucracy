@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment and secrets
+*.env
+*.env.local
+.env.production
+
+# Server data (contains player saves)
+server/database.json
+
+# Android build artifacts
+*.apk
+android/app/build/
+
+# Heavy assets (keep out of repo for now)
+public/assets/logo.png
+assets/logo.png

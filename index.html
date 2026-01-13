@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Cosmic Bureaucracy</title>
+  
+  <!-- Favicon and Mobile Icons -->
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
+  <link rel="apple-touch-icon" href="./assets/logo.png" />
+  <meta name="theme-color" content="#050614" />
+  
+  <link rel="stylesheet" href="./src/styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Inter:wght@400;700&family=Outfit:wght@300;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="black-holes"></div>
+  <div id="app">
+    <header class="game-header">
+      <div class="game-branding">
+        <img src="./assets/logo.png" alt="Logo" class="game-logo" />
+        <h1 class="game-title">Cosmic<br>Bureaucracy</h1>
+      </div>
+      <div class="stats-container">
+        <div class="resource-pill">
+          <span class="symbol"><img src="./assets/icons/resources/forms.svg" class="icon-svg" /></span>
+          <span id="forms-display" class="value">0</span>
+          <span class="rate-display">(+<span id="header-rate-val">0</span>/s)</span>
+        </div>
+        <div class="resource-pill">
+          <span class="symbol"><img src="./assets/icons/resources/meta-authority.svg" class="icon-svg" /></span>
+          <span id="meta-authority-display" class="value">0</span>
+        </div>
+        <div class="resource-pill" id="time-pill">
+          <span class="symbol"><img src="./assets/icons/resources/time.svg" class="icon-svg" /></span>
+          <span id="stored-time-display" class="value">0</span>
+        </div>
+        <div class="resource-pill" id="paradox-pill" style="display: none; border-color: var(--border-glow);">
+          <span class="symbol"><img src="./assets/icons/resources/paradox.svg" class="icon-svg" /></span>
+          <span id="paradox-display" class="value">0</span>
+        </div>
+        <div class="resource-pill" id="debt-pill" style="display: none;">
+          <span class="symbol"><img src="./assets/icons/resources/forms.svg" class="icon-svg debt-icon" /></span>
+          <span id="debt-display" class="value">0</span>
+        </div>
+      </div>
+    </header>
+
+    <main id="screen-container">
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-screen="work">
+        <span class="nav-icon"><img src="./assets/icons/resources/forms.svg" class="icon-svg" /></span>
+        <span class="nav-label">Work</span>
+      </button>
+      <button class="nav-item" data-screen="departments">
+        <span class="nav-icon"><img src="./assets/icons/navigation/depts.svg" class="icon-svg" /></span>
+        <span class="nav-label">Depts</span>
+      </button>
+      <button class="nav-item" data-screen="philosophy">
+        <span class="nav-icon"><img src="./assets/icons/navigation/policy.svg" class="icon-svg" /></span>
+        <span class="nav-label">Policy</span>
+      </button>
+      <button class="nav-item" data-screen="resets">
+        <span class="nav-icon"><img src="./assets/icons/navigation/resets.svg" class="icon-svg" /></span>
+        <span class="nav-label">Authority</span>
+      </button>
+      <button class="nav-item" data-screen="settings">
+        <span class="nav-icon"><img src="./assets/icons/navigation/settings.svg" class="icon-svg" /></span>
+        <span class="nav-label">Settings</span>
+      </button>
+    </nav>
+  </div>
+
+  <div id="modal-container" class="hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script>
+    window.onerror = function (msg, url, line, col, error) {
+      const debug = document.createElement('div');
+      debug.style.cssText = 'position:fixed; bottom:80px; left:10px; right:10px; background:rgba(255,0,0,0.8); color:white; padding:10px; font-size:10px; z-index:9999; border-radius:5px; max-height:100px; overflow:auto;';
+      debug.innerText = 'ERROR: ' + msg + '\nAt: ' + url + ':' + line;
+      document.body.appendChild(debug);
+      return false;
+    };
+    window.onunhandledrejection = function (event) {
+      const debug = document.createElement('div');
+      debug.style.cssText = 'position:fixed; bottom:190px; left:10px; right:10px; background:rgba(255,100,0,0.8); color:white; padding:10px; font-size:10px; z-index:9999; border-radius:5px;';
+      debug.innerText = 'PROMISE ERROR: ' + event.reason;
+      document.body.appendChild(debug);
+    };
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

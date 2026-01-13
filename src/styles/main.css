@@ -1,0 +1,34 @@
+/**
+ * Cosmic Bureaucracy — Main Stylesheet
+ * 
+ * This file orchestrates imports in the correct order.
+ * Individual styles are organized into modules under:
+ *   - base/     (variables, reset, typography)
+ *   - layout/   (app shell, navigation)
+ *   - components/ (buttons, cards, pills, etc.)
+ *   - screens/  (screen-specific styles)
+ *   - effects/  (animations, backgrounds, entities)
+ */
+
+/* === Base === */
+@import './base/variables.css';
+@import './base/reset.css';
+@import './base/typography.css';
+
+/* === Layout === */
+@import './layout/app-shell.css';
+
+/* === Components === */
+@import './components/pills.css';
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/toasts.css';
+@import './components/modals.css';
+
+/* === Screens === */
+@import './screens/work.css';
+
+/* === Effects === */
+@import './effects/animations.css';
+@import './effects/backgrounds.css';
+@import './effects/entities.css';

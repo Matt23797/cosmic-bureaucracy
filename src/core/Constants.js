@@ -1,0 +1,82 @@
+/**
+ * Central registry for game balance constants and magic numbers.
+ */
+export const GameConstants = {
+    // Timing and Intervals
+    TICK_RATE_MS: 100,
+    MS_PER_SECOND: 1000,
+    AUTOSAVE_INTERVAL_MS: 10000,
+    SAVE_DEBOUNCE_MS: 2000,
+    NETWORK_TIMEOUT_MS: 3000,
+    MAX_OFFLINE_TIME_MS: 86400000, // 24 Hours
+
+    // Economic Thresholds
+    TIME_WARP_COST: 3600,
+    TIME_WARP_BASE_MULTIPLIER: 3600,
+    OVERDRIVE_DURATION_MS: 300000, // 5 Minutes
+    OVERDRIVE_MULT: 2.0,
+    TUTORIAL_FORMS_THRESHOLD: 5,
+    BURN_BACKLOG_DEPT_REDUCTION_MULT: 0.5,
+
+    // Paradox Burst Configuration
+    PARADOX_BURST_DURATION_MS: 30000,
+    PARADOX_BURST_COOLDOWN_MS: 60000,
+    PARADOX_BURST_TIERS: [
+        { cost: 50, multiplier: 2 },
+        { cost: 200, multiplier: 5 },
+        { cost: 500, multiplier: 10 }
+    ],
+
+    // Friction and Decay
+    DEBT_FRICTION_DIVISOR: 100000,
+    PARADOX_FRICTION_THRESHOLD: 1000,
+    PARADOX_FRICTION_DIVISOR: 10000,
+    PARADOX_DECAY_THRESHOLD: 500,
+    PARADOX_DECAY_RATE: 1.0,
+    MAX_FRICTION_DEFAULT: 0.9,
+    MAX_FRICTION_EMERGENCY: 0.5,
+
+    // Sequester Logic
+    SEQUESTER_THRESHOLD: 500,
+    SEQUESTER_BASE_RATE: 0.1,
+    SEQUESTER_CAP: 0.75,
+
+    // Synergy Bonuses
+    SYNERGY_BASE_BONUS: 0.15,
+    SYNERGY_UPGRADE_BONUS: 0.25,
+
+    // Philosophy Specifics
+    COMPLIANCE_BASE_MULT: 2.0,
+    COMPLIANCE_UPGRADE_MULT: 1.5,
+    EXPANSION_UNIQUE_DEPT_BONUS: 0.15,
+    EMERGENCY_PROD_MULT: 5.0,
+    EMERGENCY_DEBT_MULT: 0.05,
+    EMERGENCY_UPGRADE_PROD_MULT: 3.0,
+    EMERGENCY_UPGRADE_DEBT_MULT: 2.0,
+
+    // Prestige (Reality Audit)
+    PRESTIGE_BASE_THRESHOLD: 10000000,
+    PRESTIGE_THRESHOLD_MULT: 1.3,
+
+    // Meta Progression
+    META_AUTHORITY_PROD_BONUS: 0.05,
+    META_EFFICIENCY_MULT: 1.1,
+
+    // Click Power
+    CLICK_POWER_BASE: 1.0,
+    CLICK_PARADOX_200_BONUS: 0.05,
+    CLICK_PARADOX_500_BONUS: 0.10,
+    CLICK_EXPANSION_DEPT_BONUS: 0.1,
+    CLICK_GLITCH_CHANCE_MULT: 0.01,
+    CLICK_GLITCH_MULT: 10,
+    CLICK_META_RANK_3_MULT: 2.0,
+
+    // Simulation Probabilities
+    GLITCH_CHANCE_MULT: 0.001,
+    GLITCH_MIN_MULT: 50,
+    GLITCH_MAX_MULT: 150,
+
+    // Offline Progress
+    OFFLINE_EFFICIENCY_DEFAULT: 0.1,
+    OFFLINE_EFFICIENCY_COMPLIANCE: 0.5
+};

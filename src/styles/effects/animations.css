@@ -1,0 +1,224 @@
+/**
+ * Animations
+ * All @keyframes definitions for the game
+ */
+
+/* Screen Transitions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+/* Modal Animations */
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes milestoneIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5) translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Resource Effects */
+@keyframes pillPop {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        border-color: var(--accent-cyan);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes resourcePop {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
+
+/* Button Effects */
+@keyframes ripple {
+    to {
+        transform: scale(15);
+        opacity: 0;
+    }
+}
+
+@keyframes burstFlash {
+    0% {
+        box-shadow: 0 0 0 rgba(192, 38, 211, 0);
+    }
+
+    50% {
+        box-shadow: 0 0 60px rgba(192, 38, 211, 0.9);
+        transform: scale(1.1);
+    }
+
+    100% {
+        box-shadow: 0 0 15px rgba(192, 38, 211, 0.3);
+    }
+}
+
+@keyframes burnPulse {
+    from {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    }
+
+    to {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    }
+}
+
+@keyframes burstPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px rgba(192, 38, 211, 0.3);
+        transform: scale(1);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(192, 38, 211, 0.6);
+        transform: scale(1.02);
+    }
+}
+
+/* Card/Badge Effects */
+@keyframes pulseGlow {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
+
+@keyframes trophyBounce {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+/* Entity Animations */
+@keyframes entityFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(5deg);
+    }
+}
+
+@keyframes entityGlitch {
+    0% {
+        transform: translate(0, 0) scale(1);
+        clip-path: inset(0 0 0 0);
+    }
+
+    50% {
+        transform: translate(-5px, 2px) scale(1.1);
+        clip-path: inset(10% 0 20% 0);
+    }
+
+    100% {
+        transform: translate(5px, -2px) scale(0.9);
+        clip-path: inset(30% 0 10% 0);
+    }
+}
+
+@keyframes entityPop {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        filter: brightness(1);
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+        filter: brightness(5);
+    }
+}
+
+/* Background Animations */
+@keyframes warpRotate {
+    0% {
+        transform: rotate(0deg) skew(8deg);
+    }
+
+    50% {
+        transform: rotate(180deg) skew(-8deg);
+    }
+
+    100% {
+        transform: rotate(360deg) skew(8deg);
+    }
+}
