@@ -55,6 +55,12 @@ export class UIManager {
                 if (state.tutorial?.active && state.tutorial.step === 0) {
                     this.showTutorialModal();
                 }
+                // Complete tutorial when player processes 5+ forms
+                if (state.tutorial?.active && (state.stats?.totalForms || 0) >= 5) {
+                    store.setState({
+                        tutorial: { active: false, step: 1 }
+                    });
+                }
             } catch (e) {
                 console.error("UIManager: Subscription error:", e);
             }
